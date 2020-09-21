@@ -1,0 +1,25 @@
+{
+    "identifier": "org.lkellar.JSONFormatter",
+    "name": "JSON Formatter",
+    "organization": "Lucas Kellar",
+    "description": "Format JSON using the JSONLint Formatter",
+    "version": "2020.1",
+    "categories": ["formatters"],
+    "license": "MIT",
+    "repository": "https://github.com/apexskier/nova-jsonformatter",
+    "bugs": "https://github.com/katzrkool/nova-jsonformatter/issues",
+    
+    "main": "main.js",
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Format JSON",
+                "command": "json-formatter.formatJSON",
+                "filters": {
+                    "syntaxes": ["json"]
+                }
+            }
+        ]
+    }
+}
