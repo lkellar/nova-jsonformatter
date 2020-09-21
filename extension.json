@@ -3,7 +3,7 @@
     "name": "JSON Formatter",
     "organization": "Lucas Kellar",
     "description": "Format JSON using the JSONLint Formatter",
-    "version": "2020.1",
+    "version": "2020.2",
     "categories": ["formatters"],
     "license": "MIT",
     "repository": "https://github.com/katzrkool/nova-jsonformatter",
