@@ -9,13 +9,12 @@ exports.deactivate = function() {
 }
 
 
-nova.commands.register("json-formatter.formatJSON", (editor) => {
-    console.log(editor);
+nova.commands.register("org.lkellar.JSONFormatter.formatJSON", (editor) => {
+    const indentSize = nova.config.get("org.lkellar.JSONFormatter.indent-size", "number");
     const documentRange = new Range(0, editor.document.length);
     
     editor.edit((e) => {
         const text = editor.getTextInRange(documentRange);
-        console.log(formatter(text));
-        e.replace(documentRange, formatter(text));
+        e.replace(documentRange, formatter(text, indentSize));
     });
 });

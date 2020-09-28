@@ -1,3 +1,6 @@
+## Version 2020.4
+Made indent size customizable.
+
 ## Version 2020.3
 Fixed screenshot in README
 

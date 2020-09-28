@@ -3,7 +3,7 @@
     "name": "JSON Formatter",
     "organization": "Lucas Kellar",
     "description": "Format JSON using the JSONLint Formatter",
-    "version": "2020.3",
+    "version": "2020.4",
     "categories": ["formatters"],
     "license": "MIT",
     "repository": "https://github.com/katzrkool/nova-jsonformatter",
@@ -11,11 +11,22 @@
     
     "main": "main.js",
     
+    "config": [
+        {
+            "key": "org.lkellar.JSONFormatter.indent-size",
+            "title": "Indent Size",
+            "description": "How many spaces to use for each indent",
+            "type": "number",
+            "required": true,
+            "default": 4
+        }
+    ],
+    
     "commands": {
         "editor": [
             {
                 "title": "Format JSON",
-                "command": "json-formatter.formatJSON",
+                "command": "org.lkellar.JSONFormatter.formatJSON",
                 "filters": {
                     "syntaxes": ["json"]
                 }

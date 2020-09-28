@@ -6,10 +6,10 @@ function repeat(s, count) {
     return new Array(count + 1).join(s);
 }
 
-function formatJson(json) {
+function formatJson(json, indentSize) {
     var i           = 0,
         il          = 0,
-        tab         = "    ",
+        tab         = " ".repeat(indentSize),
         newJson     = "",
         indentLevel = 0,
         inString    = false,
