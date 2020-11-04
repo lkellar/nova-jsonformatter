@@ -1,3 +1,6 @@
+## Version 2020.5
+Updated README with instructions on how to use.
+
 ## Version 2020.4
 Made indent size customizable.
 
