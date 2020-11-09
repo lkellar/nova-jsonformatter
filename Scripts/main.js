@@ -15,6 +15,7 @@ nova.commands.register("org.lkellar.JSONFormatter.formatJSON", (editor) => {
     
     editor.edit((e) => {
         const text = editor.getTextInRange(documentRange);
+        editor.tabLength = indentSize;
         e.replace(documentRange, formatter(text, indentSize));
     });
 });

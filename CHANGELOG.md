@@ -1,3 +1,6 @@
+## Version 2020.6
+Sets editor tab size to JSON indent size.
+
 ## Version 2020.5
 Updated README with instructions on how to use.
 
