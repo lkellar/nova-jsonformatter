@@ -1,3 +1,6 @@
+## Version 2020.7
+Now supports single quotes as well as double quotes.
+
 ## Version 2020.6
 Sets editor tab size to JSON indent size.
 

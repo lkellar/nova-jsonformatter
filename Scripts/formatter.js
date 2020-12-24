@@ -58,6 +58,7 @@ function formatJson(json, indentSize) {
                 newJson += currentChar;
             }
             break;
+        case `'`:
         case '"': 
             if (i > 0 && json.charAt(i - 1) !== '\\') {
                 inString = !inString; 
