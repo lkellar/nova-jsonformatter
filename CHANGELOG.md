@@ -1,3 +1,6 @@
+## Version 2020.8
+Reverted single quotes support as it caused issues formatting valid JSON
+
 ## Version 2020.7
 Now supports single quotes as well as double quotes.
 
