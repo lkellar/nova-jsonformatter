@@ -1,3 +1,6 @@
+## Version 2021.1
+Added option to format JSON and keep the indent size set in the editor
+
 ## Version 2020.8
 Reverted single quotes support as it caused issues formatting valid JSON
 

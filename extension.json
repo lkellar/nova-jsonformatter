@@ -3,7 +3,7 @@
     "name": "JSON Formatter",
     "organization": "Lucas Kellar",
     "description": "Format JSON using the JSONLint Formatter",
-    "version": "2020.9",
+    "version": "2021.1",
     "categories": ["formatters"],
     "license": "MIT",
     "repository": "https://github.com/lkellar/nova-jsonformatter",
@@ -27,6 +27,13 @@
             {
                 "title": "Format JSON",
                 "command": "org.lkellar.JSONFormatter.formatJSON",
+                "filters": {
+                    "syntaxes": ["json"]
+                }
+            },
+            {
+                "title": "Format JSON and Preserve Spacing",
+                "command": "org.lkellar.JSONFormatter.formatJSONPreserve",
                 "filters": {
                     "syntaxes": ["json"]
                 }

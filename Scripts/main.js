@@ -19,3 +19,12 @@ nova.commands.register("org.lkellar.JSONFormatter.formatJSON", (editor) => {
         e.replace(documentRange, formatter(text, indentSize));
     });
 });
+
+nova.commands.register("org.lkellar.JSONFormatter.formatJSONPreserve", (editor) => {
+    const documentRange = new Range(0, editor.document.length);
+    
+    editor.edit((e) => {
+        const text = editor.getTextInRange(documentRange);
+        e.replace(documentRange, formatter(text, editor.tabLength));
+    });
+});
